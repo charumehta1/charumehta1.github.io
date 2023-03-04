@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #DBB4B4;
+  padding: 20px;
+  width: 700px;
+  row-gap: 50px
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #F7DCDC;
+  padding: 50px;
+  width: 1470px;
+  row-gap: 30px;
+  column-gap: 40px
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid rgba(239, 219, 178, 1));
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img {
+	height: 150px;
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container1">
+  <div class="grid-container">
+    <div class="grid-item">
+      <img class="img" src="image1.jpg"></img>
+      <p>Text</p>
+      <p>Text2</p>
+     </div>
+    <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+ </div>
+   <div class="grid-container">
+      <div class="grid-item">
+        <img class="img" src="image1.jpg"></img>
+        <p>Text</p>
+        <p>Text2</p>
+       </div>
+      <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+   </div>
+     <div class="grid-container">
+      <div class="grid-item">
+        <img class="img" src="image1.jpg"></img>
+        <p>Text</p>
+        <p>Text2</p>
+       </div>
+      <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+   </div>
+   <div class="grid-container">
+      <div class="grid-item">
+        <img class="img" src="image1.jpg"></img>
+        <p>Text</p>
+        <p>Text2</p>
+       </div>
+      <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+   </div>
+   <div class="grid-container">
+      <div class="grid-item">
+        <img class="img" src="image1.jpg"></img>
+        <p>Text</p>
+        <p>Text2</p>
+       </div>
+      <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+   </div>
+   <div class="grid-container">
+      <div class="grid-item">
+        <img class="img" src="image1.jpg"></img>
+        <p>Text</p>
+        <p>Text2</p>
+       </div>
+      <div class="grid-item"><img class="img" src="image2.jpg"></img></div>
+   </div>
+</div>
+
+</body>
+</html>
