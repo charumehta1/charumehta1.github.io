@@ -43,22 +43,39 @@ height: 50%;
     width: 50%;
 }
 </style>
-<h1 style="text-align:center; font-family:Ink Free"> SKINCARE </h1>
 </head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body style="background-color:#F7DCDC">
-  <div class="grid-container1">
-  <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://www.sk-ii.com/product/essence/facial-treatment-essence">
-      <img class="img" src="skii.png"></img></a>
-      <p style="font-family:SimSun">SK-II Facial Treatment Essence</p>
-      <p style="font-family:SimSun">$99.00</p>
-     </div>
-    <div class="grid-item">
-        <a href= "https://www.target.com/p/ma-nyo-galac-niacin-2-0-essence-facial-treatment-1oz/-/A-87860961?ref=tgt_adv_XS000000&AFID=google_pla_df_free_online&CPNG=Beauty&adgroup=37-14">
-        <img class="img" src="skii2.png"></img></a>
-        <p style="font-family:SimSun">ma:nyo Galac Niacin 2.0 Essence Facial Treatment</p>
-        <p style="font-family:SimSun">$19.99</p></div>
+    <h1 style="text-align:center; font-family:Ink Free"> SKINCARE </h1>
+    <div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+      <button style = "font-size: 8pt" class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Close &times;</button>
+      <a href="https://charumehta1.github.io/index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="https://charumehta1.github.io/makeup.html" class="w3-bar-item w3-button">Makeup</a>
+      <a href="https://charumehta1.github.io/accessories.html" class="w3-bar-item w3-button">Accessories</a>
+      <a href="https://charumehta1.github.io/clothing.html" class="w3-bar-item w3-button">Clothing</a>
+      <a href="https://charumehta1.github.io/skincare.html" class="w3-bar-item w3-button">Skincare</a>
+
+</div>
+
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="font-size: 30pt; text-align:center">Style On A Budget</h1>
+  </div>
+</div>
+    
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
     
  </div>
    <div class="grid-container">
@@ -132,6 +149,16 @@ height: 50%;
 
    </div>
 </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 </body>
 </html>
