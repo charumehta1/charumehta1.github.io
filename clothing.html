@@ -43,24 +43,42 @@ text-align: center;
 height: 50%;
     width: 50%;
 }
-</style>
-<h1 style="text-align:center; font-family:Ink Free"> CLOTHING </h1>
+<</style>
 </head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body style="background-color:#F7DCDC">
-  <div class="grid-container1">
-  <div class="grid-container">
-    <div class="grid-item">
-      <a href=https://lirikamatoshi.com/products/strawberry-midi-dress><img class="img" src="straw.png" width=500></img></a>
-      <p style="font-family:SimSun">Strawberry Midi Dress</p>
-      <p style="font-family:SimSun">$490.00</p>
-     </div>
-    <div class="grid-item"><a href=https://www.amazon.com/Faithtur-Strawberry-Sequins-Dresses-Wedding/dp/B08QCVY3HG/ref=sr_1_16?keywords=strawberry+dress&qid=1677957901&sr=8-16>
-        <img class="img" src="strawberry.png"></img></a>
-        <p style="font-family:SimSun">Faithtur Strawberry Sequins Ruffle Mesh Party Dresses</p>
-        <p style="font-family:SimSun">$35.49</p>
-    </div>
+    <h1 style="text-align:center; font-family:Ink Free"> ACCESSORIES </h1>
+    <div class="w3-sidebar w3-bar-block" style="display:none;z-index:5" id="mySidebar">
+      <button style = "font-size: 8pt" class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">Close &times;</button>
+      <a href="https://charumehta1.github.io/index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="https://charumehta1.github.io/makeup.html" class="w3-bar-item w3-button">Makeup</a>
+      <a href="https://charumehta1.github.io/accessories.html" class="w3-bar-item w3-button">Accessories</a>
+      <a href="https://charumehta1.github.io/clothing.html" class="w3-bar-item w3-button">Clothing</a>
+      <a href="https://charumehta1.github.io/skincare.html" class="w3-bar-item w3-button">Skincare</a>
+
+</div>
+
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 style="font-size: 30pt; text-align:center">Style On A Budget</h1>
+  </div>
+</div>
     
- </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+    
+  <div class="grid-container1">
    <div class="grid-container">
       <div class="grid-item">
         <a href=https://shop.lululemon.com/p/womens-leggings/Align-Pant-Super-Hi-Rise-28/_/prod9200552?color=0001&sz=2&locale=en_US&sl=US&CID=Google_PMAX_US_NAT_EN_W_Hybrid_Leggings_GEN_Y22_ag=&gclid=Cj0KCQiA9YugBhCZARIsAACXxeIgrEguKkVrcxyGwcDJ31ooeJTPPY9EgJw1JFbEB3DN13aWVOsGHmMaAlfaEALw_wcB&gclsrc=aw.ds><img class="img" src="leggings.png"></img></a>
@@ -112,6 +130,16 @@ height: 50%;
 
    </div>
 </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 </body>
 </html>
