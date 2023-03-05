@@ -39,11 +39,23 @@ function w3_close() {
 
 <form style="text-align:center" name="myForm" action="/action_page.js" onsubmit="return validateForm()" method="post">
   Name: <input style="text-align:center" type="text" name="fname">
-  <input style="text-align:center" type="submit" value="Submit">
+  <button id="submit_button">Submit</button>
+  <input style="text-align:center" type="submit" value="Submit" id="input_text">
 </form>
 
   <script>
+    
+var submit_button = document.getElementById('submit_button');
+submit_button.addEventListener("click", submit);
+  
+function submit(){
+  console.log('hello in submit function');
+  var input_text = document.getElementById('input_text');
+  console.log(input_text.value);
+}
+    
 function validateForm() {
+  
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
     alert("Name must be filled out");
