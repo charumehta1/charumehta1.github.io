@@ -38,24 +38,28 @@ function w3_close() {
   
   <h2 style="text-align:center; font-family: Goudy Old Style"> Who is the best webhost?</h2>
 
-<!--<form style="text-align:center" name="myForm" action="/action_page.js" onsubmit="return validateForm()" method="post">-->
-  <--!Name: <input style="text-align:center" type="text" name="fname">-->
-  
   <input style="text-align:center" type="text"  id="input_text">
   <button id="submit_button">Submit</button>
-
-  <!--</form>-->
-
+  
+  <p id="CVENT"></p>
   
   <script>
     
 var submit_button = document.getElementById('submit_button');
 submit_button.addEventListener("click", submit);
+    
+ var son = document.getElementById('CVENT');
+ //son.innerHTML = 'slay or nay';
   
 function submit(){
   console.log('hello in submit function');
   var input_text = document.getElementById('input_text');
   console.log(input_text.value);
+  
+  if (input_text == 'CVENT')
+    son.innerHTML = 'slay';
+  else
+    son.innerHTML = 'nay';
 }
     
 function validateForm() {
