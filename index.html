@@ -39,7 +39,7 @@ function w3_close() {
   <h2 style="text-align:center; font-family: Goudy Old Style"> Who is the best webhost?</h2>
 
   <input style="text-align:center" type="text"  id="input_text">
-  <button id="submit_button">Submit</button>
+  <button id="submit_button" style="text-align:center">Submit</button>
   
   <p id="CVENT"></p>
   
@@ -56,7 +56,7 @@ function submit(){
   var input_text = document.getElementById('input_text');
   console.log(input_text.value);
   
-  if (input_text == 'CVENT')
+  if (input_text.equals === 'CVENT')
     son.innerHTML = 'slay';
   else
     son.innerHTML = 'nay';
