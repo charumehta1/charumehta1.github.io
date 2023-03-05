@@ -8,6 +8,26 @@
     .center{
       text-align:center;
     }
+    .grid-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: auto auto auto;
+  background-color: #FFFFFF;
+  padding: 5%;
+  width: 100%;
+  column-gap: 5%
+  }
+  .grid-item {
+  background-color: rgba(255, 255, 255, 1);
+  height: 100%;
+  width: 100%;/*
+  padding: 5%;
+  font-size: 30px;*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
   </style>
 <h1 style="text-align:center; font-family:Ink Free">DOOP</h1>
   <img class="img" src="amyv.png"></img>
@@ -42,7 +62,21 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-  
+  <h1 style="text-align:center; font-family:Ink Free">ABOUT US</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img class="img" src="amy.jpg"></img>
+      <p style="font-family:SimSun">Amy about us</p>
+     </div>
+    <div class="grid-item">
+      <img class="img" src="ann.jpg"></img>
+      <p style="font-family:SimSun">Ann about us</p>
+     </div>
+    <div class="grid-item">
+      <img class="img" src="charu.jpg"></img>
+      <p style="font-family:SimSun">Amy about us</p>
+     </div>
+  </div>
   <h2 style="text-align:center; font-family: Goudy Old Style"> Who is the best webhost?</h2>
 
   <div class="center">
@@ -50,11 +84,7 @@ function w3_close() {
     <button id="submit_button" style="text-align:center">Submit</button>
     <p id="CVENT"></p>
   </div>
-    <h1 style="text-align:center; font-family:Ink Free">ABOUT US</h1>
   <div class="center">
-  <img class="img" src="amy.jpg"></img>
-  <img class="img" src="ann.jpg"></img>
-<img class="img" src="charu.jpg"></img>
 </div>
   <script>
     
